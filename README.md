@@ -29,15 +29,20 @@ pip install torch torchvision tqdm numpy opencv-python Pillow scikit-learn h5py 
 
 You will also need the dlib facial landmark predictor model.
 
-**Automatic Download (Recommended):**
+**Automatic Download (Recommended):**  
 The `feature_extraction.py` script is designed to automatically download and decompress this model the first time it is run. In most cases, you do not need to do anything manually.
 
-**Manual Download (If automatic fails):**
+**Manual Download (If automatic download fails):**  
 If the script fails to download the model (e.g., due to a firewall or network issue), please follow these steps:
-1.  Download the compressed model file from the official dlib source:  
-    [**shape_predictor_68_face_landmarks.dat.bz2**](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
-2.  **Unzip** the downloaded file. You will get a file named `shape_predictor_68_face_landmarks.dat`.
-3.  Place this unzipped `shape_predictor_68_face_landmarks.dat` file in the main directory of this project (the same folder where `README.md` and the Python scripts are located).
+
+1. **Copy and open the following link in your browser:**  
+   [shape_predictor_68_face_landmarks.dat.bz2](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
+2. **Unzip** the downloaded file. You will get a file named `shape_predictor_68_face_landmarks.dat`.
+3. Place this unzipped `shape_predictor_68_face_landmarks.dat` file in the main directory of this project (the same folder where `README.md` and the Python scripts are located).
+
+> **Note:**  
+> Do not upload the large `.dat` file to the repository.  
+> If you experience persistent download issues, please check your network or try alternative mirrors if available.
 ## Usage Workflow
 
 The workflow is divided into four main steps: Data Preparation, Preprocessing, Feature Extraction, Training, and Inference.
