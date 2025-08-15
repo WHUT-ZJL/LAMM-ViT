@@ -35,8 +35,10 @@ The `feature_extraction.py` script is designed to automatically download and dec
 **Manual Download (If automatic download fails):**  
 If the script fails to download the model (e.g., due to a firewall or network issue), please follow these steps:
 
-1. **Copy and open the following link in your browser:**  
-   [shape_predictor_68_face_landmarks.dat.bz2](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
+1. **Copy and open the following link in your browser (or right-click to copy/download):**
+
+   http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+
 2. **Unzip** the downloaded file. You will get a file named `shape_predictor_68_face_landmarks.dat`.
 3. Place this unzipped `shape_predictor_68_face_landmarks.dat` file in the main directory of this project (the same folder where `README.md` and the Python scripts are located).
 
